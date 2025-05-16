@@ -24,7 +24,7 @@ function LoginForm({ toggleTheme }) {
         message: 'Login successful!',
       });
       console.log('Login Success:', response.data);
-      // เก็บ token หรือ redirect ตามต้องการ
+      
       setTimeout(() => setAlert({ show: false, variant: '', message: '' }), 5000);
     } catch (error) {
       setAlert({

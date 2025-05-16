@@ -26,9 +26,9 @@ function RegisterForm({ toggleMode }) {
         message: 'Registration successful! Redirecting to Login...',
       });
       console.log('Register Success:', response.data);
-      // เคลียร์ฟอร์ม
+      
       formRef.current.reset();
-      // สลับไปฟอร์ม Login หลังจาก 2 วินาที
+      
       setTimeout(() => {
         setAlert({ show: false, variant: '', message: '' });
         toggleMode();
